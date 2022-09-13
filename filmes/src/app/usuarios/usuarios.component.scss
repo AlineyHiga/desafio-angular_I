@@ -1,0 +1,94 @@
+#main{
+    margin:0 14vw;
+    
+}
+#card-cadastro {
+    max-width: 1037px;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+#card-cadastro mat-card-title{
+    margin:20px 0;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+}
+#card-cadastro form{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+form mat-form-field{
+    height: 58px;
+    max-width: 320px;
+    width: 80%;
+}
+
+#card-cadastro button{
+    align-self: flex-start;
+    height: 58px;
+    width: 180px;
+    background-color:#f6511d;
+    color: white;
+    border-radius: 0;
+    margin-top: 20px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+}
+.card-usuarios{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card-usuarios span{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+
+    color: #4B2142;
+}
+.card-botao{
+    width: 262px;
+    display: flex;
+    justify-content: space-between;
+}
+.card-botao .editar{
+    height: 35px;
+    width: 125px;
+    background: #F6511D;
+    border: 2px solid #F6511D;
+    border-radius: 20px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+
+    color: #FFFFFF;
+}
+.card-botao .excluir{
+    height: 35px;
+    width: 125px;
+    background: #41B8D2;
+    border: 2px solid #41B8D2;
+    border-radius: 20px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+
+    color: black;
+}

@@ -1,1 +1,25 @@
-<mat-card>dsd</mat-card>
+<mat-card-content>
+    <div>
+        <img mat-card-image src="/assets/Group 2.png"> 
+        <ng-container *ngIf="router.routerState.snapshot.url == '/home'">
+            <p>Conheça nossa Coletânea</p>
+        </ng-container>
+        <ng-container *ngIf="router.routerState.snapshot.url == '/usuarios'">
+            <p id="p-cadastro1" >Faça o Cadastro de usuários e edite, caso necessário</p>
+            <p id="p-cadastro2" >Pronto para cadastrar?</p>
+        </ng-container>
+        <ng-container *ngIf="router.routerState.snapshot.url == '/filmes'">
+            <p>Cadastre os filmes de sua preferência</p>
+        </ng-container> 
+        <ng-container *ngIf="router.routerState.snapshot.url == '/genero'">
+            <p>Cadastre os filmes de sua preferência</p>
+        </ng-container> 
+    </div>
+ 
+    <nav>
+        <a routerLink="../home" alt="pagina home">Home</a>
+        <a routerLink="../usuarios" alt="pagina usuários">Usuários</a>
+        <a routerLink="../filmes" alt="página filmes" >Filmes</a>
+        <a routerLink="../genero" alt="página gênero" >Gênero</a>
+    </nav>
+</mat-card-content>

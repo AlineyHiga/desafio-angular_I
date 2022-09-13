@@ -1,0 +1,39 @@
+mat-card-content{
+    height: 250px;
+    width: 100%;
+    background-color: #F6511D;
+    
+}
+#total{
+    margin-left: 10%;
+    display: flex;
+    justify-content: center;
+    padding-top: 25px ;
+    margin-top: 5px;   
+}
+hr{
+    height: 200px;
+    margin: 0 45px;
+}
+
+img{
+    height: 62px;
+    width: 177px;
+    margin-top: 26px;
+}
+#informacao{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    margin-top: 26px;
+}
+span{
+    margin:5px 0;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+
+    color: #FFFCFC;
+}

@@ -1,0 +1,55 @@
+mat-card-content{
+    background-color: #9BD2DE;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+mat-card-content div{
+    margin-left: 14vw;
+    display: flex;
+    flex-direction: column;
+   
+    justify-content: center;
+}
+mat-card-content  div img{
+    width: 174px;
+    margin: 0;
+    margin-top: 50px;
+}
+mat-card-content div p{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 29px;
+    
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+div #p-cadastro1{
+    margin-bottom: 0;
+}
+div #p-cadastro2{
+    font-size: 22px;
+    margin: 0;
+}
+mat-card-content nav{
+    margin-right: 14vw;
+    width: 373px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a{
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #4B2142;
+}
+a:hover{
+    border-bottom:2px solid #4B2142;
+}

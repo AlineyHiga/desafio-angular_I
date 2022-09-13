@@ -27,25 +27,25 @@ form{
 
     color: #000000;
 }
-.card-input{
+#card-input{
     width: 100%;
     display: flex;
-    align-content: space-between;
+
     justify-content: space-between;
 }
 mat-form-field{
     max-width: 350px;
     width: 100%;
-    margin-right: 2.5rem;
+
 }
 form button{
-    align-self: flex-start;
+
     height: 52px;
     width: 150px;
     background-color:#f6511d;
     color: white;
     border-radius: 0;
-    margin-top: 20px;
+
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;

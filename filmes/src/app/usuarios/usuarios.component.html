@@ -3,20 +3,26 @@
     <mat-card-content id="card-cadastro">
         <mat-card-title>Cadastro</mat-card-title>
         <form>
-            <mat-form-field appearance="outline">
-                <mat-label>Nome</mat-label>
-                <input matInput type="text" placeholder="Placeholder">
-            </mat-form-field> 
-            <mat-form-field appearance="outline">
-                <mat-label>E-mail</mat-label>
-                <input matInput type="email" placeholder="Placeholder">
-            </mat-form-field> 
-            <mat-form-field appearance="outline">
-                <mat-label>Telefone</mat-label>
-                <input matInput type="number" placeholder="Placeholder">
-            </mat-form-field> 
+            <div id="card-input">
+                <mat-form-field appearance="outline">
+                    <mat-label>Nome</mat-label>
+                    <input matInput type="text" placeholder="Placeholder" required>
+                    <mat-error>Esse campo é obrigatório</mat-error>
+                </mat-form-field> 
+                <mat-form-field appearance="outline">
+                    <mat-label>E-mail</mat-label>
+                    <input matInput type="email" placeholder="Placeholder" required>
+                    <mat-error>Esse campo é obrigatório</mat-error>
+                </mat-form-field> 
+                <mat-form-field appearance="outline">
+                    <mat-label>Telefone</mat-label>
+                    <input matInput type="number" placeholder="Placeholder" required>
+                    <mat-error>Esse campo é obrigatório</mat-error>
+                </mat-form-field>   
+            </div>
+            <button mat-flat-button type="submit" color="#F6511D">cadastrar</button> 
         </form> 
-        <button mat-flat-button type="submit" color="#F6511D">cadastrar</button>   
+          
     </mat-card-content>
     <mat-card id="usuarios-cadastrados">
         <mat-card-content class="card-usuarios">

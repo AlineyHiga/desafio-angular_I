@@ -1,9 +1,9 @@
 <app-header></app-header>
-<mat-card id="main">
+<div id="main">
     <mat-card-content id="cadastro">
         <mat-card-title>Filmes</mat-card-title>
         <img src="/assets/cinema 1.png">
-        <form>
+        <div id='form'>
             <mat-card-subtitle>Cadastrar Filmes</mat-card-subtitle>
             <div id="card-input">
                 <mat-form-field appearance="outline">
@@ -20,7 +20,7 @@
                 </mat-form-field>
                 <button mat-flat-button>Salvar</button>
             </div>
-        </form>
+        </div>
     </mat-card-content>
     <mat-card id="filmes-cadastrados">
         <mat-card-content class="card-filme">
@@ -48,5 +48,5 @@
             </mat-card-actions>
         </mat-card-content> 
     </mat-card>
-</mat-card>
+</div>
 <app-footer></app-footer>

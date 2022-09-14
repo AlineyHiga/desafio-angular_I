@@ -15,7 +15,7 @@
     line-height: 28px;
     margin:12px 0;
 }
-form{
+#form{
     width: 100%;
 }
 #cadastro mat-card-subtitle{
@@ -37,7 +37,10 @@ mat-form-field{
     max-width: 350px;
     width: 100%;
 }
-form button{
+mat-label{
+    color: #4B2142; 
+ }
+#form button{
     height: 52px;
     width: 150px;
     background-color:#f6511d;

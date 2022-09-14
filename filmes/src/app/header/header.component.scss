@@ -34,13 +34,14 @@ div #p-cadastro2{
     font-size: 22px;
     margin: 0;
 }
-mat-card-content nav{
+
+nav ul{
+    list-style: none;
     margin-right: 14vw;
     width: 373px;
     display: flex;
     justify-content: space-between;
 }
-
 nav a{
     text-decoration: none;
     font-family: 'Roboto';

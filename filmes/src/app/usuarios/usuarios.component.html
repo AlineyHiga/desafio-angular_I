@@ -1,26 +1,26 @@
 <app-header></app-header>
-<mat-card id="main">
+<main id="main">
     <mat-card-content id="card-cadastro">
         <mat-card-title>Cadastro</mat-card-title>
-        <form>
+        <form >
             <div id="card-input">
                 <mat-form-field appearance="outline">
                     <mat-label>Nome</mat-label>
-                    <input matInput type="text" placeholder="Placeholder" required>
-                    <mat-error>Esse campo é obrigatório</mat-error>
+                    <input matInput type="text"  [formControl]="nome" required>
+                    <mat-error *ngIf="nome.invalid">{{getErrorMessage()}}</mat-error>
                 </mat-form-field> 
                 <mat-form-field appearance="outline">
                     <mat-label>E-mail</mat-label>
-                    <input matInput type="email" placeholder="Placeholder" required>
-                    <mat-error>Esse campo é obrigatório</mat-error>
+                    <input matInput type="email" [formControl]="email" required>
+                    <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
                 </mat-form-field> 
                 <mat-form-field appearance="outline">
                     <mat-label>Telefone</mat-label>
-                    <input matInput type="number" placeholder="Placeholder" required>
-                    <mat-error>Esse campo é obrigatório</mat-error>
+                    <input matInput type="number"  [formControl]="telefone" required>
+                    <mat-error *ngIf="telefone.invalid">{{getErrorMessage()}}</mat-error>
                 </mat-form-field>   
             </div>
-            <button mat-flat-button type="submit" color="#F6511D">cadastrar</button> 
+            <button mat-flat-button type="submit" >cadastrar</button> 
         </form> 
           
     </mat-card-content>
@@ -72,6 +72,6 @@
         </mat-card-content>  
     </mat-card>
     
-</mat-card>
+</main>
 
 <app-footer></app-footer>

@@ -8,17 +8,19 @@
             <div id="card-input">
                 <mat-form-field appearance="outline">
                     <mat-label>Título do Filme</mat-label>
-                    <input matInput type="text" placeholder="Placeholder">
+                    <input matInput type="text" [formControl]="filme" >
+                    <mat-error *ngIf="filme.invalid">Esse campo é obrigatório</mat-error>
                 </mat-form-field> 
                 <mat-form-field appearance="outline">
                     <mat-label>Gênero</mat-label>
-                    <mat-select>
-                      <mat-option value="1">Terror</mat-option>
-                      <mat-option value="2">Ação</mat-option>
-                      <mat-option value="3">comédia</mat-option>
+                    <mat-select [formControl]="selected">
+                      <mat-option value="1" >Terror</mat-option>
+                      <mat-option value="2" >Ação</mat-option>
+                      <mat-option value="3" >comédia</mat-option>
                     </mat-select>
+                    <mat-error *ngIf="selected.hasError('required') ">Campo obrigatório!</mat-error>
                 </mat-form-field>
-                <button mat-flat-button>Salvar</button>
+                <button mat-flat-button type="submit">Salvar</button>
             </div>
         </div>
     </mat-card-content>

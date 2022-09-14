@@ -32,7 +32,15 @@ form mat-form-field{
     max-width: 320px;
     width: 30%;
 }
+mat-form-field mat-label{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
 
+    color: #4B2142;
+}
 #card-cadastro button{
     align-self: flex-start;
     height: 58px;

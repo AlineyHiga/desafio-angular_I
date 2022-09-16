@@ -20,7 +20,7 @@
                     </mat-select>
                     <mat-error *ngIf="selected.hasError('required') ">Campo obrigatório!</mat-error>
                 </mat-form-field>
-                <button mat-flat-button type="submit">Salvar</button>
+                <button mat-flat-button type="submit" [disabled]="filme.invalid || selected.hasError('required')">Salvar</button>
             </div>
         </div>
     </mat-card-content>

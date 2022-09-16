@@ -11,7 +11,7 @@
                     <input matInput type="text" [formControl]="genero" required >
                     <mat-error *ngIf="genero.invalid">{{getErrorMessage()}}</mat-error>
                 </mat-form-field> 
-                <button mat-flat-button>Salvar</button>
+                <button mat-flat-button [disabled]="genero.invalid">Salvar</button>
             </div>
         </div>
     </mat-card-content>

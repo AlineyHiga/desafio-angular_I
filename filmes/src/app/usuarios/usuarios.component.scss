@@ -55,6 +55,12 @@ mat-form-field mat-label{
     font-size: 20px;
     line-height: 23px;
 }
+#card-cadastro button:disabled{
+    background-color:gray;
+}
+#usuarios-cadastrados{
+    margin: 80px 0;
+}
 .card-usuarios{
     display: flex;
     justify-content: space-between;

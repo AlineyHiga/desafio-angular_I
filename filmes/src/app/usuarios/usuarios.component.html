@@ -12,7 +12,7 @@
                 <mat-form-field appearance="outline">
                     <mat-label>E-mail</mat-label>
                     <input matInput type="email" [formControl]="email" required>
-                    <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+                    <mat-error *ngIf="email.invalid">{{getErrorMessageEmail()}}</mat-error>
                 </mat-form-field> 
                 <mat-form-field appearance="outline">
                     <mat-label>Telefone</mat-label>
@@ -26,51 +26,32 @@
     </mat-card-content>
     <mat-card id="usuarios-cadastrados">
         <mat-card-content class="card-usuarios">
-            <span class="nome">Nome</span>
-            <span class="email">e-mail</span>
-            <span class="phone">tel11111</span>
+            <span class="nome">Paulo Andre</span>
+            <span class="email">paulo@email.com</span>
+            <span class="phone">3349 6788</span>
             <mat-card-actions class="card-botao">
                 <button mat-flat-button type="submit" class="editar">Editar</button>
                 <button mat-flat-button type="submit" class="excluir">Excluir</button>
             </mat-card-actions>
         </mat-card-content> 
         <mat-card-content class="card-usuarios">
-            <span class="nome">Nome</span>
-            <span class="email">e-mail</span>
-            <span class="phone">tel11111</span>
-            <mat-card-actions class="card-botao">
-                <button mat-flat-button type="submit" class="editar">Editar</button>
-                <button mat-flat-button type="submit" class="excluir">Excluir</button>
-            </mat-card-actions>
-        </mat-card-content> 
-        <mat-card-content class="card-usuarios">
-            <span class="nome">Nome</span>
-            <span class="email">e-mail</span>
-            <span class="phone">tel11111</span>
+            <span class="nome">Marcos Lucio</span>
+            <span class="email">marcos@email.com</span>
+            <span class="phone">3349 6788</span>
             <mat-card-actions class="card-botao">
                 <button mat-flat-button type="submit" class="editar">Editar</button>
                 <button mat-flat-button type="submit" class="excluir">Excluir</button>
             </mat-card-actions>
         </mat-card-content>  
         <mat-card-content class="card-usuarios">
-            <span class="nome">Nome</span>
-            <span class="email">e-mail</span>
-            <span class="phone">tel11111</span>
-            <mat-card-actions class="card-botao">
-                <button mat-flat-button type="submit" class="editar">Editar</button>
-                <button mat-flat-button type="submit" class="excluir">Excluir</button>
-            </mat-card-actions>
-        </mat-card-content>  
-        <mat-card-content class="card-usuarios">
-            <span class="nome">Nome</span>
-            <span class="email">e-mail</span>
-            <span class="phone">tel11111</span>
+            <span class="nome">Laura Port</span>
+            <span class="email">laura@email.com</span>
+            <span class="phone">3349 6788</span>
             <mat-card-actions class="card-botao">
                 <button mat-flat-button type="submit" class="editar">Editar</button>
                 <button mat-flat-button type="submit" class="excluir">Excluir</button>
             </mat-card-actions>
         </mat-card-content>  
     </mat-card>
-    
 </main>
 <app-footer></app-footer>

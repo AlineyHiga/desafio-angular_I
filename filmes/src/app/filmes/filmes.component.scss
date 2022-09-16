@@ -59,12 +59,19 @@ mat-label{
     font-size: 20px;
     line-height: 23px;
 }
+#form button:disabled{
+    background-color:gray;
+}
+#filmes-cadastrados{
+    margin: 80px 0;
+}
 .card-filme{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 .card-filme span{
+    width: 30%;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;

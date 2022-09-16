@@ -17,16 +17,15 @@ export class UsuariosComponent implements OnInit {
 
   }
   getErrorMessage() {
-    if(this.email) {
-      if(this.email.hasError('required')){
-        return 'Campo obrigatório!';
-      }
-      return this.email.hasError('email') ? 'E-mail inválido' : '';
-    }
     if ( this.nome.hasError('required') || this.telefone.hasError('required')) {
       return 'Campo obrigatório!';
     }
     return
   }
-
+  getErrorMessageEmail() {
+    if(this.email.hasError('required')){
+      return 'Campo obrigatório!';
+    }
+    return this.email.hasError('email') ? 'E-mail inválido' : '';
+}
 }

@@ -16,16 +16,25 @@ export class UsuariosComponent implements OnInit {
   ngOnInit(): void {
 
   }
-  getErrorMessage() {
-    if ( this.nome.hasError('required') || this.telefone.hasError('required')) {
+  //função de erro para nome
+  getErrorMessageNome() {
+    if ( this.nome.hasError('required')) {
       return 'Campo obrigatório!';
     }
-    return
+    return 
   }
-  getErrorMessageEmail() {
+  //função de erro para o email
+  getErrorMessageEmail():string {
     if(this.email.hasError('required')){
       return 'Campo obrigatório!';
     }
     return this.email.hasError('email') ? 'E-mail inválido' : '';
-}
+  }
+  //função de erro para o telefone
+  getErrorMessageTelefone(){
+    if ( this.telefone.hasError('required')) {
+      return 'Campo obrigatório!';
+    }
+    return 
+  }
 }

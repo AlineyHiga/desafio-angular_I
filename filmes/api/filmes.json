@@ -1,0 +1,89 @@
+{
+  "filme": [
+    {
+      "id": "1",
+      "titulo": "Os outros",
+      "genero": "Terror"
+    },
+    {
+      "id": "2",
+      "titulo": "Até o último homem",
+      "genero": "Ação"
+    },
+    {
+      "id": "3",
+      "titulo": "O máscara",
+      "genero": "Comédia"
+    },
+    {
+      "titulo": "qqa",
+      "genero": "dee",
+      "id": "4"
+    },
+    {
+      "titulo": "ssadsdassdsda",
+      "genero": "Comédia",
+      "id": "5"
+    }
+  ],
+  "genero": [
+    {
+      "genero": "Terror",
+      "id": "1"
+    },
+    {
+      "genero": "Ação",
+      "id": "2"
+    },
+    {
+      "genero": "Comédia",
+      "id": "3"
+    },
+    {
+      "genero": "dee",
+      "id": "4"
+    },
+    {
+      "genero": "w",
+      "id": "5"
+    }
+  ],
+  "usuario": [
+    {
+      "nome": "Paulo Andre",
+      "email": "paulo@email.com",
+      "telefone": "334956788",
+      "id": "1"
+    },
+    {
+      "nome": "marcus o",
+      "email": "marcus@o",
+      "telefone": "111111111",
+      "id": "2"
+    },
+    {
+      "nome": "Laura Porte",
+      "email": "laura@email.com",
+      "telefone": "334986788",
+      "id": "3"
+    },
+    {
+      "nome": "222s",
+      "email": "222@222",
+      "telefone": "222222222",
+      "id": "4"
+    },
+    {
+      "nome": "123",
+      "email": "adf@q",
+      "telefone": "543654654",
+      "id": "6"
+    },
+    {
+      "nome": "123",
+      "email": "123@1233q",
+      "telefone": "123231223",
+      "id": "8"
+    }
+  ]
+}

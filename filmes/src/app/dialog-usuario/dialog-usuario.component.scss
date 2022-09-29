@@ -1,0 +1,39 @@
+main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#card-input{
+  display: flex;
+  flex-direction: column;
+}
+mat-label{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  color: #4B2142;
+}
+#card-botao{
+  display: flex;
+  align-items: center;
+}
+
+button{
+  width: 125px;
+  height: 35px;
+  background: #F6511D;
+  border: 2px solid #F6511D;
+  border-radius: 20px;
+  margin-right: 10px;
+
+  color: white;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+}
+

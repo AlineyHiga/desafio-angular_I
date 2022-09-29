@@ -1,0 +1,25 @@
+
+
+<div id='form'>
+  <mat-card-subtitle>Edição</mat-card-subtitle>
+  <div id="card-input">
+      <mat-form-field appearance="outline">
+          <mat-label>Título do Filme</mat-label>
+          <input matInput type="text" [formControl]="titulo" >
+          <mat-error *ngIf="titulo.invalid">Esse campo é obrigatório</mat-error>
+      </mat-form-field>
+      <mat-form-field appearance="outline" >
+          <mat-label>Gênero</mat-label>
+          <mat-select [formControl]="genero" >
+            <div *ngFor="let nome of listaGeneros">
+              <mat-option value="{{nome.genero}}" >{{nome.genero}}</mat-option>
+            </div>
+          </mat-select>
+          <mat-error *ngIf="genero.hasError('required') ">Campo obrigatório!</mat-error>
+      </mat-form-field>
+      <div>
+        <button mat-flat-button  mat-dialog-close="{}">Cancelar</button>
+        <button mat-flat-button type="submit" [disabled]="titulo.invalid || genero.hasError('required')" [mat-dialog-close]="{cadastrar,titulo,genero}">Editar</button>
+      </div>
+
+</div>

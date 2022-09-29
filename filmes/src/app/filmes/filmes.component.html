@@ -8,47 +8,31 @@
             <div id="card-input">
                 <mat-form-field appearance="outline">
                     <mat-label>Título do Filme</mat-label>
-                    <input matInput type="text" [formControl]="filme" >
-                    <mat-error *ngIf="filme.invalid">Esse campo é obrigatório</mat-error>
-                </mat-form-field> 
-                <mat-form-field appearance="outline">
-                    <mat-label>Gênero</mat-label>
-                    <mat-select [formControl]="selected">
-                      <mat-option value="1" >Terror</mat-option>
-                      <mat-option value="2" >Ação</mat-option>
-                      <mat-option value="3" >comédia</mat-option>
-                    </mat-select>
-                    <mat-error *ngIf="selected.hasError('required') ">Campo obrigatório!</mat-error>
+                    <input matInput type="text" [formControl]="titulo" >
+                    <mat-error *ngIf="titulo.invalid">Esse campo é obrigatório</mat-error>
                 </mat-form-field>
-                <button mat-flat-button type="submit" [disabled]="filme.invalid || selected.hasError('required')">Salvar</button>
+                <mat-form-field appearance="outline" >
+                    <mat-label>Gênero</mat-label>
+                    <mat-select [formControl]="genero" >
+                      <div *ngFor="let nome of listaGeneros">
+                        <mat-option value="{{nome.genero}}" >{{nome.genero}}</mat-option>
+                      </div>
+                    </mat-select>
+                    <mat-error *ngIf="genero.hasError('required') ">Campo obrigatório!</mat-error>
+                </mat-form-field>
+                <button mat-flat-button type="submit" [disabled]="titulo.invalid || genero.hasError('required')" (click)="Cadastrar()">Salvar</button>
             </div>
         </div>
     </mat-card-content>
-    <mat-card id="filmes-cadastrados">
+    <mat-card id="filmes-cadastrados" *ngFor="let filme of listaFilmes">
         <mat-card-content class="card-filme">
-            <span class="titulo">Os outros</span>
-            <span class="genero">Terror</span>
+            <span class="titulo">{{filme.titulo}}</span>
+            <span class="genero">{{filme.genero}}</span>
             <mat-card-actions class="card-botao">
-                <button mat-flat-button type="submit" class="editar">Editar</button>
-                <button mat-flat-button type="submit" class="excluir">Excluir</button>
+                <button mat-flat-button type="submit" class="editar" (click)=" OpenDialog(filme.id)" >Editar</button>
+                <button mat-flat-button type="submit" class="excluir" (click)="Deletar(filme.id)">Excluir</button>
             </mat-card-actions>
-        </mat-card-content> 
-        <mat-card-content class="card-filme">
-            <span class="titulo">Até o último homem</span>
-            <span class="genero">Ação</span>
-            <mat-card-actions class="card-botao">
-                <button mat-flat-button type="submit" class="editar">Editar</button>
-                <button mat-flat-button type="submit" class="excluir">Excluir</button>
-            </mat-card-actions>
-        </mat-card-content> 
-        <mat-card-content class="card-filme">
-            <span class="titulo">O máscara</span>
-            <span class="genero">Comédia</span>
-            <mat-card-actions class="card-botao">
-                <button mat-flat-button type="submit" class="editar">Editar</button>
-                <button mat-flat-button type="submit" class="excluir">Excluir</button>
-            </mat-card-actions>
-        </mat-card-content> 
+        </mat-card-content>
     </mat-card>
 </div>
 <app-footer></app-footer>
